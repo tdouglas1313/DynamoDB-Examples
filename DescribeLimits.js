@@ -1,3 +1,4 @@
+/* https://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/DynamoDB.html#describeLimits-property */
 /* ===================== DescribeLimits ===================== */
 var params = {
 };
