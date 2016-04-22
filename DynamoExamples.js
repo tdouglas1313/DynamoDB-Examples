@@ -387,3 +387,11 @@ dynamodb.waitFor('tableExists', params, function(err, data) {
     if (err) console.error(err); // an error occurred
     else cosole.log(data); // successful response
 });
+
+/* ===================== DescribeLimits ===================== */
+var params = {
+};
+dynamodb.describeLimits(params, function(err, data) {
+  if (err) console.log(err, err.stack); // an error occurred
+  else     console.log(data);           // successful response
+});
