@@ -4,7 +4,7 @@ Examples of DynamoDB Functions From AWS Local DynamoDB Console
 [DynamoDB Docs](https://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/DynamoDB.html)
 
 #Setup
-You will need this in your js file to use the functions below<br>
+You will need this in your js file to use the functions below
 
 ```js
 var AWS = require("aws-sdk");
@@ -13,7 +13,7 @@ AWS.config.region = 'us-east-1'; //make sure this is the correct region
 var dynamodb = new AWS.DynamoDB();
 ```
 
-###[All Functions](https://github.com/tdouglas1313/DynamoDB-Examples/blob/master/DynamoExamples.js) :: [Docs](https://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/DynamoDB.html)
+###[All Functions](./DynamoExamples.js) :: [Docs](https://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/DynamoDB.html)
 - [BatchGetItem] (#BatchGetItem)
 - [BatchWriteItem] (#BatchWriteItem)
 - [CreateTable] (#CreateTable)
@@ -30,7 +30,7 @@ var dynamodb = new AWS.DynamoDB();
 - [UpdateTable] (#UpdateTable)
 - [WaitFor] (#WaitFor)
 
-### <a name="BatchGetItem"></a>[BatchGetItem](https://github.com/tdouglas1313/DynamoDB-Examples/blob/master/BatchGetItem.js) :: [Docs](https://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/DynamoDB.html#batchGetItem-property)
+### <a name="BatchGetItem"></a>[BatchGetItem](./BatchGetItem.js) :: [Docs](https://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/DynamoDB.html#batchGetItem-property)
 
 
 
@@ -62,7 +62,7 @@ dynamodb.batchGetItem(params, function(err, data) {
 });
 ```
 
-### <a name="BatchWriteItem"></a>[BatchWriteItem](https://github.com/tdouglas1313/DynamoDB-Examples/blob/master/BatchWriteItem.js) :: [Docs](https://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/DynamoDB.html#batchWriteItem-property)
+### <a name="BatchWriteItem"></a>[BatchWriteItem](./BatchWriteItem.js) :: [Docs](https://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/DynamoDB.html#batchWriteItem-property)
 ``` js
 var params = {
     RequestItems: { // A map of TableName to Put or Delete requests for that table
@@ -97,7 +97,7 @@ dynamodb.batchWriteItem(params, function(err, data) {
 });
 
 ```
-### <a name="CreateTable"></a>[CreateTable](https://github.com/tdouglas1313/DynamoDB-Examples/blob/master/CreateTable.js) :: [Docs](https://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/DynamoDB.html#createTable-property)
+### <a name="CreateTable"></a>[CreateTable](./CreateTable.js) :: [Docs](https://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/DynamoDB.html#createTable-property)
 ``` js
 var params = {
     TableName: 'table_name',
@@ -196,7 +196,7 @@ dynamodb.createTable(params, function(err, data) {
 
 });
 ```
-### <a name="DeleteItem"></a>[DeleteItem](https://github.com/tdouglas1313/DynamoDB-Examples/blob/master/DeleteItem.js) :: [Docs](https://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/DynamoDB.html#deleteItem-property)
+### <a name="DeleteItem"></a>[DeleteItem](./DeleteItem.js) :: [Docs](https://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/DynamoDB.html#deleteItem-property)
 ``` js
 var params = {
     TableName: 'table_name',
@@ -223,7 +223,7 @@ dynamodb.deleteItem(params, function(err, data) {
     else cosole.log(data); // successful response
 });
 ```
-### <a name="DeleteTable"></a>[DeleteTable](https://github.com/tdouglas1313/DynamoDB-Examples/blob/master/DeleteTable.js) :: [Docs](https://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/DynamoDB.html#deleteTable-property)
+### <a name="DeleteTable"></a>[DeleteTable](./DeleteTable.js) :: [Docs](https://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/DynamoDB.html#deleteTable-property)
 ``` js
 var params = {
     TableName: 'table_name',
@@ -233,7 +233,7 @@ dynamodb.deleteTable(params, function(err, data) {
     else cosole.log(data); // successful response
 });
 ```
-### <a name="DescribeLimits"></a>[DescribeLimits](https://github.com/tdouglas1313/DynamoDB-Examples/blob/master/DescribeLimits.js) :: [Docs](https://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/DynamoDB.html#describeLimits-property)
+### <a name="DescribeLimits"></a>[DescribeLimits](./DescribeLimits.js) :: [Docs](https://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/DynamoDB.html#describeLimits-property)
 ``` js
 var params = {
 };
@@ -242,7 +242,7 @@ dynamodb.describeLimits(params, function(err, data) {
   else     console.log(data);           // successful response
 });
 ```
-### <a name="DescribeTable"></a>[DescribeTable](https://github.com/tdouglas1313/DynamoDB-Examples/blob/master/DescribeTable.js) :: [Docs](https://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/DynamoDB.html#describeTable-property)
+### <a name="DescribeTable"></a>[DescribeTable](./DescribeTable.js) :: [Docs](https://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/DynamoDB.html#describeTable-property)
 ``` js
 var params = {
     TableName: 'table_name',
@@ -252,7 +252,7 @@ dynamodb.describeTable(params, function(err, data) {
     else cosole.log(data); // successful response
 });
 ```
-### <a name="GetItem"></a>[GetItem](https://github.com/tdouglas1313/DynamoDB-Examples/blob/master/GetItem.js) :: [Docs](https://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/DynamoDB.html#getItem-property)
+### <a name="GetItem"></a>[GetItem](./GetItem.js) :: [Docs](https://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/DynamoDB.html#getItem-property)
 ``` js
 var params = {
     TableName: 'table_name',
@@ -274,7 +274,7 @@ dynamodb.getItem(params, function(err, data) {
     else cosole.log(data); // successful response
 });
 ```
-### <a name="ListTables"></a>[ListTables](https://github.com/tdouglas1313/DynamoDB-Examples/blob/master/ListTables.js) :: [Docs](https://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/DynamoDB.html#listTables-property)
+### <a name="ListTables"></a>[ListTables](./ListTables.js) :: [Docs](https://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/DynamoDB.html#listTables-property)
 ``` js
 var params = {
     ExclusiveStartTableName: 'table_name', // optional (for pagination, returned as LastEvaluatedTableName)
@@ -286,7 +286,7 @@ dynamodb.listTables(params, function(err, data) {
 });
 
 ```
-### <a name="PutItem"></a>[PutItem](https://github.com/tdouglas1313/DynamoDB-Examples/blob/master/PutItem.js) :: [Docs](https://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/DynamoDB.html#putItem-property)
+### <a name="PutItem"></a>[PutItem](./PutItem.js) :: [Docs](https://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/DynamoDB.html#putItem-property)
 ``` js
 var params = {
     TableName: 'table_name',
@@ -312,7 +312,7 @@ dynamodb.putItem(params, function(err, data) {
     else cosole.log(data); // successful response
 });
 ```
-### <a name="Query"></a>[Query](https://github.com/tdouglas1313/DynamoDB-Examples/blob/master/Query.js) :: [Docs](https://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/DynamoDB.html#query-property)
+### <a name="Query"></a>[Query](./Query.js) :: [Docs](https://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/DynamoDB.html#query-property)
 ``` js
 var params = {
     TableName: 'table_name',
@@ -348,7 +348,7 @@ dynamodb.query(params, function(err, data) {
     else cosole.log(data); // successful response
 });
 ```
-### <a name="Scan"></a>[Scan](https://github.com/tdouglas1313/DynamoDB-Examples/blob/master/Scan.js) :: [Docs](https://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/DynamoDB.html#scan-property)
+### <a name="Scan"></a>[Scan](./Scan.js) :: [Docs](https://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/DynamoDB.html#scan-property)
 ``` js
 var params = {
     TableName: 'table_name',
@@ -381,7 +381,7 @@ dynamodb.scan(params, function(err, data) {
     else cosole.log(data); // successful response
 });
 ```
-### <a name="UpdateItem"></a>[UpdateItem](https://github.com/tdouglas1313/DynamoDB-Examples/blob/master/UpdateItem.js) :: [Docs](https://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/DynamoDB.html#updateItem-property)
+### <a name="UpdateItem"></a>[UpdateItem](./UpdateItem.js) :: [Docs](https://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/DynamoDB.html#updateItem-property)
 ``` js
 var params = {
     TableName: 'table_name',
@@ -411,7 +411,7 @@ dynamodb.updateItem(params, function(err, data) {
     else cosole.log(data); // successful response
 });
 ```
-### <a name="UpdateTable"></a>[UpdateTable](https://github.com/tdouglas1313/DynamoDB-Examples/blob/master/UpdateTable.js) :: [Docs](https://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/DynamoDB.html#updateTable-property)
+### <a name="UpdateTable"></a>[UpdateTable](./UpdateTable.js) :: [Docs](https://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/DynamoDB.html#updateTable-property)
 ``` js
 var params = {
     TableName: 'table_name',
@@ -436,7 +436,7 @@ dynamodb.updateTable(params, function(err, data) {
     else cosole.log(data); // successful response
 });
 ```
-### <a name="WaitFor"></a>[WaitFor](https://github.com/tdouglas1313/DynamoDB-Examples/blob/master/WaitFor.js) :: [Docs](https://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/DynamoDB.html#waitFor-property)
+### <a name="WaitFor"></a>[WaitFor](./WaitFor.js) :: [Docs](https://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/DynamoDB.html#waitFor-property)
 ``` js
 var params = {
     TableName: 'table_name',
