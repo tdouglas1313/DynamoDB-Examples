@@ -57,7 +57,7 @@ var params = {
 };
 dynamodb.batchGetItem(params, function(err, data) {
     if (err) console.error(err); // an error occurred
-    else cosole.log(data); // successful response
+    else console.log(data); // successful response
 
 });
 ```
@@ -93,7 +93,7 @@ var params = {
 };
 dynamodb.batchWriteItem(params, function(err, data) {
     if (err) console.error(err); // an error occurred
-    else cosole.log(data); // successful response
+    else console.log(data); // successful response
 });
 
 ```
@@ -192,7 +192,7 @@ var params = {
 };
 dynamodb.createTable(params, function(err, data) {
     if (err) console.error(err); // an error occurred
-    else cosole.log(data); // successful response
+    else console.log(data); // successful response
 
 });
 ```
@@ -220,7 +220,7 @@ var params = {
 };
 dynamodb.deleteItem(params, function(err, data) {
     if (err) console.error(err); // an error occurred
-    else cosole.log(data); // successful response
+    else console.log(data); // successful response
 });
 ```
 ### <a name="DeleteTable"></a>[DeleteTable](./DeleteTable.js) :: [Docs](https://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/DynamoDB.html#deleteTable-property)
@@ -230,7 +230,7 @@ var params = {
 };
 dynamodb.deleteTable(params, function(err, data) {
     if (err) console.error(err); // an error occurred
-    else cosole.log(data); // successful response
+    else console.log(data); // successful response
 });
 ```
 ### <a name="DescribeLimits"></a>[DescribeLimits](./DescribeLimits.js) :: [Docs](https://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/DynamoDB.html#describeLimits-property)
@@ -249,7 +249,7 @@ var params = {
 };
 dynamodb.describeTable(params, function(err, data) {
     if (err) console.error(err); // an error occurred
-    else cosole.log(data); // successful response
+    else console.log(data); // successful response
 });
 ```
 ### <a name="GetItem"></a>[GetItem](./GetItem.js) :: [Docs](https://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/DynamoDB.html#getItem-property)
@@ -271,7 +271,7 @@ var params = {
 };
 dynamodb.getItem(params, function(err, data) {
     if (err) console.error(err); // an error occurred
-    else cosole.log(data); // successful response
+    else console.log(data); // successful response
 });
 ```
 ### <a name="ListTables"></a>[ListTables](./ListTables.js) :: [Docs](https://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/DynamoDB.html#listTables-property)
@@ -282,7 +282,7 @@ var params = {
 };
 dynamodb.listTables(params, function(err, data) {
     if (err) console.error(err); // an error occurred
-    else cosole.log(data); // successful response
+    else console.log(data); // successful response
 });
 
 ```
@@ -309,7 +309,7 @@ var params = {
 };
 dynamodb.putItem(params, function(err, data) {
     if (err) console.error(err); // an error occurred
-    else cosole.log(data); // successful response
+    else console.log(data); // successful response
 });
 ```
 ### <a name="Query"></a>[Query](./Query.js) :: [Docs](https://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/DynamoDB.html#query-property)
@@ -345,7 +345,7 @@ var params = {
 };
 dynamodb.query(params, function(err, data) {
     if (err) console.error(err); // an error occurred
-    else cosole.log(data); // successful response
+    else console.log(data); // successful response
 });
 ```
 ### <a name="Scan"></a>[Scan](./Scan.js) :: [Docs](https://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/DynamoDB.html#scan-property)
@@ -378,7 +378,7 @@ var params = {
 };
 dynamodb.scan(params, function(err, data) {
     if (err) console.error(err); // an error occurred
-    else cosole.log(data); // successful response
+    else console.log(data); // successful response
 });
 ```
 ### <a name="UpdateItem"></a>[UpdateItem](./UpdateItem.js) :: [Docs](https://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/DynamoDB.html#updateItem-property)
@@ -408,7 +408,7 @@ var params = {
 };
 dynamodb.updateItem(params, function(err, data) {
     if (err) console.error(err); // an error occurred
-    else cosole.log(data); // successful response
+    else console.log(data); // successful response
 });
 ```
 ### <a name="UpdateTable"></a>[UpdateTable](./UpdateTable.js) :: [Docs](https://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/DynamoDB.html#updateTable-property)
@@ -433,7 +433,7 @@ var params = {
 };
 dynamodb.updateTable(params, function(err, data) {
     if (err) console.error(err); // an error occurred
-    else cosole.log(data); // successful response
+    else console.log(data); // successful response
 });
 ```
 ### <a name="WaitFor"></a>[WaitFor](./WaitFor.js) :: [Docs](https://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/DynamoDB.html#waitFor-property)
@@ -444,6 +444,6 @@ var params = {
 // Supports 'tableExists' and 'tableNotExists'
 dynamodb.waitFor('tableExists', params, function(err, data) {
     if (err) console.error(err); // an error occurred
-    else cosole.log(data); // successful response
+    else console.log(data); // successful response
 });
 ```

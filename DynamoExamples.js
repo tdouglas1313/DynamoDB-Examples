@@ -20,7 +20,7 @@ var params = {
 };
 dynamodb.putItem(params, function(err, data) {
     if (err) console.error(err); // an error occurred
-    else cosole.log(data); // successful response
+    else console.log(data); // successful response
 });
 
 /* ===================== UpdateItem ===================== */
@@ -49,7 +49,7 @@ var params = {
 };
 dynamodb.updateItem(params, function(err, data) {
     if (err) console.error(err); // an error occurred
-    else cosole.log(data); // successful response
+    else console.log(data); // successful response
 });
 
 /* ===================== DeleteItem ===================== */
@@ -75,7 +75,7 @@ var params = {
 };
 dynamodb.deleteItem(params, function(err, data) {
     if (err) console.error(err); // an error occurred
-    else cosole.log(data); // successful response
+    else console.log(data); // successful response
 });
 
 /* ===================== BatchWriteItem ===================== */
@@ -108,7 +108,7 @@ var params = {
 };
 dynamodb.batchWriteItem(params, function(err, data) {
     if (err) console.error(err); // an error occurred
-    else cosole.log(data); // successful response
+    else console.log(data); // successful response
 });
 
 /* ===================== GetItem ===================== */
@@ -129,7 +129,7 @@ var params = {
 };
 dynamodb.getItem(params, function(err, data) {
     if (err) console.error(err); // an error occurred
-    else cosole.log(data); // successful response
+    else console.log(data); // successful response
 });
 
 /* ===================== BatchGetItem ===================== */
@@ -155,7 +155,7 @@ var params = {
 };
 dynamodb.batchGetItem(params, function(err, data) {
     if (err) console.error(err); // an error occurred
-    else cosole.log(data); // successful response
+    else console.log(data); // successful response
 
 });
 
@@ -191,7 +191,7 @@ var params = {
 };
 dynamodb.query(params, function(err, data) {
     if (err) console.error(err); // an error occurred
-    else cosole.log(data); // successful response
+    else console.log(data); // successful response
 });
 
 /* ===================== Scan ===================== */
@@ -223,7 +223,7 @@ var params = {
 };
 dynamodb.scan(params, function(err, data) {
     if (err) console.error(err); // an error occurred
-    else cosole.log(data); // successful response
+    else console.log(data); // successful response
 });
 
 /* ===================== CreateTable ===================== */
@@ -320,7 +320,7 @@ var params = {
 };
 dynamodb.createTable(params, function(err, data) {
     if (err) console.error(err); // an error occurred
-    else cosole.log(data); // successful response
+    else console.log(data); // successful response
 
 });
 
@@ -345,7 +345,7 @@ var params = {
 };
 dynamodb.updateTable(params, function(err, data) {
     if (err) console.error(err); // an error occurred
-    else cosole.log(data); // successful response
+    else console.log(data); // successful response
 });
 
 /* ===================== DeleteTable ===================== */
@@ -354,7 +354,7 @@ var params = {
 };
 dynamodb.deleteTable(params, function(err, data) {
     if (err) console.error(err); // an error occurred
-    else cosole.log(data); // successful response
+    else console.log(data); // successful response
 });
 
 /* ===================== DescribeTable ===================== */
@@ -363,7 +363,7 @@ var params = {
 };
 dynamodb.describeTable(params, function(err, data) {
     if (err) console.error(err); // an error occurred
-    else cosole.log(data); // successful response
+    else console.log(data); // successful response
 });
 
 /* ===================== ListTables ===================== */
@@ -373,7 +373,7 @@ var params = {
 };
 dynamodb.listTables(params, function(err, data) {
     if (err) console.error(err); // an error occurred
-    else cosole.log(data); // successful response
+    else console.log(data); // successful response
 });
 
 /* ===================== WaitFor ===================== */
@@ -385,7 +385,7 @@ var params = {
 // Supports 'tableExists' and 'tableNotExists'
 dynamodb.waitFor('tableExists', params, function(err, data) {
     if (err) console.error(err); // an error occurred
-    else cosole.log(data); // successful response
+    else console.log(data); // successful response
 });
 
 /* ===================== DescribeLimits ===================== */

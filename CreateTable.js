@@ -93,6 +93,6 @@ var params = {
 };
 dynamodb.createTable(params, function(err, data) {
     if (err) console.error(err); // an error occurred
-    else cosole.log(data); // successful response
+    else console.log(data); // successful response
 
 });
